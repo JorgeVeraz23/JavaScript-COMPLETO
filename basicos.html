@@ -8,8 +8,9 @@
 </head>
 <body>
     <h1>Fundamentos de JavaScript</h1>
+
     <script>
-        var hola = "Hola Mundo";
+       /* var hola = "Hola Mundo";
         let hello = "Hello World";
         console.log(hola);
         console.log(hello);
@@ -25,7 +26,7 @@
         es un comentario
         de varias lineas
         */
-        {
+        /*{
             var musica = "Pop";
             console.log("Variable musica dentro del bloque",musica);
         }
@@ -58,7 +59,85 @@
         colores.push("naranja");
 
         console.log(objeto);
-        console.log(colores)
+        console.log(colores);
+
+        //Cadenas de texto aka Strings
+        let nombre = "Jon";
+        let apellido = 'Mircha';
+        let saludo = new String("Hola Mundo");//esta declaracion es muy formal y no necesaria
+        let lorem = "        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum venenatis libero nec dui feugiat, id consectetur sapien feugiat. Curabitur ultrices facilisis est, eu tempus libero suscipit non.";
+        
+        console.log(nombre, apellido, saludo);
+        console.log(nombre.length, 
+        apellido.length, 
+        saludo.length,
+        nombre.toUpperCase(),
+        nombre.toLowerCase(),
+        lorem.includes("ipsum"),
+        lorem.includes("jon"),
+        lorem,
+        lorem.trim(),//quita los espacios en blanco en una cadena de texto
+        lorem.split(""),//transforma un string en un arreglo
+        lorem.split(",")
+        );*/
+
+        let nombre1 = "Jorge";
+        let apellido2 = "Vera";
+        //Concatenacion
+        let saludo2 = "Hola mi nombre es "+
+        nombre1 + " "+apellido2;
+
+        console.log(saludo2);
+        //Interpolacion de variables
+        //Template String
+        /*let saludo = `Hola mi nombre es ${nombre1} ${apellido2} `;
+        console.log(saludo);
+
+        let ul2 = `
+        <ul>
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+        </ul>`;
+        console.log(ul2);*/
+        /*let a = 2;
+        let b = new Number(3);
+        let c = 7.19;
+        let d = "5.6";
+        console.log(typeof c, typeof d);
+        console.log(a,b);
+        console.log(c.toFixed(1));
+        console.log(c.toFixed(5));
+        console.log(parseInt(c));
+        console.log(parseFloat(c));
+        console.log(c + parseInt(d));
+        console.log(c + parseFloat(d));*/ 
+
+        /*let verdadero = true;
+        let falso = false;
+        let v = Boolean(true);
+        let f = Boolean(false);
+
+        console.log(verdadero, falso, v, f);
+        console.log(typeof verdadero, typeof falso);
+
+        console.log(Boolean(0));
+        console.log(Boolean(-5));
+        console.log(Boolean(""));
+        console.log(Boolean(" "));*/
+
+        //la siguiente es una variable undefined porque no esta definido su valor
+        let indefinida;
+        console.log(indefinida);
+        //tipo de dato null
+        let nulo = null;
+        console.log(null);
+        //tipo de dato NaN - significa not a number
+        let noEsUnNumero = "hola" * 3.7;
+        console.log(noEsUnNumero);
+
     </script>
+    
 </body>
 </html>
