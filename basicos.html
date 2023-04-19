@@ -126,7 +126,7 @@
         console.log(Boolean(-5));
         console.log(Boolean(""));
         console.log(Boolean(" "));*/
-
+/*
         //la siguiente es una variable undefined porque no esta definido su valor
         let indefinida;
         console.log(indefinida);
@@ -135,7 +135,218 @@
         console.log(null);
         //tipo de dato NaN - significa not a number
         let noEsUnNumero = "hola" * 3.7;
-        console.log(noEsUnNumero);
+        console.log(noEsUnNumero);*/
+/*
+        //Funcion Declarada
+        function estoEsUnaFuncion(){
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+        }
+
+        function unaFuncionQueDevuelveValor(){
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+            return "la funcion a retornado una cadena de texto";
+        }
+
+        function saludar(nombre = "Desconocido", edad = 0){
+            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+        }
+
+        saludar("jorge",23);
+        saludar();
+
+        //funciones declaradas VS funciones Expresadas
+
+        funcionDeclarada();
+
+        function funcionDeclarada(){
+            console.log("Esto es una funcion declarada, puede invovarse en cualquier parte incluso antes de que la funcion sea declarada");
+        }
+
+        funcionDeclarada();
+
+        //funcion anonima   
+
+        const functionExpresada = function(){
+            console.log("Esto es una funcion expresada es decir una funcion que se le a asignado como valor a una variable, si invocamos a esta funcion antes de su definicion JS nos dira...");
+        }
+
+        functionExpresada();
+*/
+        //
+
+        //let valorDeFuncion = unaFuncionQueDevuelveValor();
+
+        //console.log(valorDeFuncion);
+
+       /* //Invocacion de funciones
+        estoEsUnaFuncion();*/
+
+        //arreglos
+/*
+        const a = [];
+        const b = [1, true, "hola", "A", "B", "C", ["a","b","c"]];
+
+
+        console.log(a);
+        console.log(b);
+        console.log(b.length);
+        console.log(b[0]);
+        console.log(b[2]);
+        console.log(b[6][0]);
+
+        const c = Array.of("x","y","z",9,8,5);
+        console.log(c);
+
+        const d = Array(100).fill(false);
+        console.log(d);
+
+        const e = new Array();
+        console.log(e);
+
+        const f = new Array(1,2,3, true, false);
+        console.log(f);
+
+        const colores = ["Rojo", "Verde", "Azul"];
+        console.log(colores);
+
+        //push agrega un elemento al final del arreglo
+        colores.push("Negro");
+        console.log(colores);
+        //pop elimina un elemento al final del arreglo
+        colores.pop();
+        console.log(colores);
+
+        //ejecutar una funcion por cada elemento que tenga el arreglo
+        colores.forEach(function(el,index){
+            console.log(`<li id="${index}">${el}</li>`);
+        });
+
+        */
+/*
+        let a = new String("hola");
+        //console.log(a);
+
+        const b = {};
+        console.log(b);
+
+        const c = new Object();
+        console.log(c);
+        
+        const jorge = {
+            nombre: "Jorge",
+            apellido: "vera",
+            edad: 23,
+            pasatiempos: ["correr", "programar", "ser pendejo"],
+            soltero: true,
+            contacto: {
+                email: "jorgeverazambrano@outlook.com",
+                twitter: "@jorgeveraz",
+                numero: 0962592610
+            },
+            saludar: function(){
+                console.log("hola")
+            },
+            decirMiNombre: function(){
+                console.log(`hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años`)
+            }
+        }
+
+        console.log(jorge);
+        console.log(jorge["nombre"]);
+        console.log(jorge.edad);
+        console.log(jorge.contacto.numero);
+        jorge.saludar();
+        console.log(jorge.pasatiempos[0]);
+        jorge.decirMiNombre();
+        //objet.keys me permite listar todas las llaves del objeto
+        console.log(Object.keys(jorge));
+        //me retorna los valores del objeto
+        console.log(Object.values(jorge));
+        //devuelve un boleano si existe una propiedad con el nombre que le pidamos
+        console.log(jorge.hasOwnProperty("nombre"));
+        console.log(jorge.hasOwnProperty("nacimiento"));
+
+*/
+
+        //Tipos de operadores
+
+        /* aritmeticos +-* /% */
+
+        let a = 5 + (5 - 10) * 3;
+        let modulo = 5 % 2;
+
+        console.log(a);
+        console.log(modulo);
+        /* 
+        Relacionales
+    >, <, !=, !==
+        */
+
+    console.log(8 > 9);
+    console.log(9 > 8);
+    console.log(8 >= 9);
+    console.log(8 <= 9);
+    console.log(7 != 7);
+
+    /* 
+    = 1 igual es asignacion
+    == 2 iguales es comparacion de valores
+    === 3 iguales es comparacion de tipo de datos y de valores
+    */
+/*
+    console.log(7 == 7);
+    console.log("7" == 7);
+    console.log(0 == false);
+
+    console.log(7 === 7);
+    console.log("7" === 7);
+    console.log(0 === false);
+
+    /* 
+    Incremento y Decremento
+    */
+
+  //  let i = 1;
+
+    //i = i + 2;
+    //i += 3;// igual i = i + 3
+    // i /= 3;// igual i = 1 / 3
+
+    //operador unario
+ /*   i++;
+    i--;
+    ++i;
+    --i;
+
+    console.log(i);
+
+    /*
+    Logicos
+    !o - Not
+    || - Or
+    && - And
+    */
+/*
+    console.log(!true);
+    console.log(!false);
+    console.log((9 === 9) || ("9" === 9));
+    console.log((9 === 9) && ("9" === 9));*/
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
     
