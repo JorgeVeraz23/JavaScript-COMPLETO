@@ -275,7 +275,7 @@
         //Tipos de operadores
 
         /* aritmeticos +-* /% */
-
+/*
         let a = 5 + (5 - 10) * 3;
         let modulo = 5 % 2;
 
@@ -285,13 +285,13 @@
         Relacionales
     >, <, !=, !==
         */
-
+/*
     console.log(8 > 9);
     console.log(9 > 8);
     console.log(8 >= 9);
     console.log(8 <= 9);
     console.log(7 != 7);
-
+*/
     /* 
     = 1 igual es asignacion
     == 2 iguales es comparacion de valores
@@ -336,17 +336,372 @@
     console.log((9 === 9) || ("9" === 9));
     console.log((9 === 9) && ("9" === 9));*/
 
+/*if-else*/
+/*
+let edad = 17;
+
+if(edad >= 18){
+    console.log('eres mayor de edad');
+}else{
+    console.log('eres menor de edad')
+}
+let hora = 12;
+
+if (hora >= 0 && hora <= 5) {
+  console.log('¡Déjame Dormir!');
+} else if (hora >= 6 && hora <= 11) {
+  console.log('Buenos días');
+} else if (hora >= 12 && hora <= 18) {
+  console.log('Buenas tardes');
+} else if (hora >= 19 && hora <= 23) {
+  console.log('Buenas noches');
+} else {
+  console.log('La hora es incorrecta');
+}
+/*
+/*Operador Ternario (condicion) ? verdadero: falsa*/
+/*console.log('operador ternario');
+
+let eresMayor = (edad >= 18)
+? 'eres mayor de edad'
+:'eres menor de edad';
+console.log(eresMayor);
+*/
+/*switch-case*/
+/*let dia = 6;
+switch(dia){
+    case 0:
+    console.log('Domingo');
+    break;
+    case 1:
+    console.log('Lunes');
+    break;
+    case 2:
+    console.log('Martes');
+    break;
+    case 3:
+    console.log('Miercoles');
+    break;
+    case 4:
+    console.log('Jueves');
+    break;
+    case 5:
+    console.log('Viernes');
+    break;
+    case 6:
+    console.log('Sabado');
+    break;
+    default:
+    console.log('El dia no existe')
+    break;
+}
+*/
+/*
+    let contador = 0
+    while(contador < 10){
+        console.log(contador);
+        contador++;
+    }
+
+    do{
+        console.log("do while"+contador);
+        contador++;
+    }while(contador < 10);
+
+*/
+/*    for(inicializacion de la variable; condicion; decremento e incremento){
+        sentencias que ejecuta el for
+    }/*
+    for(let i = 0; i < 10; i++){
+        console.log('for'+i);
+    }
+    let numeros = [10,20,30,40,50,60,70,80,90];
+
+    for(let i=0; i < numeros.length; i++){
+        console.log(numeros[i]);
+    }
+    const persona = {
+        nombre: 'jorge',
+        apellido: 'vera',
+        edad: 35
+    }*/
+    /*for in permite recorrer propiedades de un objeto*/
+   /* for(const propiedad in persona){
+        console.log(propiedad);
+    }
+    for(const propiedad in persona){
+        console.log(`Key:${propiedad}, Value: ${persona[propiedad]}`);
+    }
+    for(const propiedad in persona){
+        console.log(propiedad);
+    }*/
+
+    /*for of permite recorrer todos los elementos de cualquier objeto que sea iterable en javascript */
+    /*
+    for(const elemento of numeros){
+        console.log(elemento);
+    }
+
+    let cadena = 'hola mundo';
+
+    for(const elemento of cadena){
+        console.log(elemento);
+    }*//*
+    alert("hola")
+        console.log("hola mundo")
+        try{
+          console.log("En el try se agrega el codigo a evaluar")
+        }catch(error){
+          console.log("catch, calcula cualquier error surgido en el try")
+        }finally{
+          console.log("el bloque finally se ejecutara siempre al final de un bloque try-catch")
+        }
+        try{
+            let numero = "hola"
+            
+            if(isNaN(numero)){
+              throw new Error("El caracter introducido no es un numero")
+            }
+            
+            console.log(numero * numero)
+          }catch(error){
+            console.log(`se produjo el siguiente error: ${error}`)
+          }
+          const numeros = [1,2,3,4,5,6,7,8,9,0]
+   
+   for(let i =0; i< numeros.length; i++)
+   {
+     if(i === 5){
+       break
+     }
+     console.log(numeros[i])
+   }
+   
+   for(let i =0; i< numeros.length; i++)
+   {
+     if(i === 5){
+       continue
+     }
+     console.log(numeros[i])
+   }*/
+/*
+   let numeros = [1,2,3];
+
+   //Sin destructuracion
+   let uno = numeros[0],
+    dos = numeros[1],
+    tres = numeros[2];
+
+    console.log(uno,dos,tres);
+
+    //Con destructuracion
+
+    const [one, two, three] = numeros;
+   console.log(one, two, three);
+
+   let persona = {
+    nombre: "Jon",
+    apellido: "Mircha",
+    edad: 35
+   }
+
+   let {nombre, apellido, edad} = persona;
+   console.log(nombre, apellido, edad);
+*/
+   /*Los objetos literales son una nueva forma de escribir atributos y metodos*/
+/*
+   const dog = {
+    nombre,
+    edad,
+    edad,
+    raza: "Callejero",
+    ladrar(){
+        console.log("guauguau")
+    }
+   }
+
+   console.log(dog)
+   dog.ladrar();
+     */
+/*Parametros REST & Operador Spread*/
+/*REST*/
+/*son una forma de virtualmente ir agregando parametros infinitos*/
+/*...c es un parametro REST que puede o no estar mencionado al llamar la funcion*/
+/*function sumar(a,b,...c){
+    let resultado = a + b;
+    c.forEach(function (n){
+    resultado += n  
+});
+return resultado;
+}
+
+console.log(sumar(1,2));
+console.log(sumar(1,2,3))
+console.log(sumar(1,2,3,4))
+console.log(sumar(1,2,3,4,5))
+console.log(sumar(1,2,3,4,5,6))
+*/
+/*Spread Operator o Operador de Propagacion*/
+/*
+const arr1 = [1,2,3,4,5],
+    arr2 = [6,7,8,9,0];
+
+    console.log(arr1, arr2);
+
+    const arr3 = [...arr1,...arr2]
+
+    console.log(arr3)*/
+
+    /*Arrow Functions son una nueva forma de expresar una funcion anonima*/
+/*
+    const saludar = (nombre) => console.log(`Hola ${nombre}`);
+    saludar("Jorge");
+
+    const sumar = (a,b) => a + b;
+
+    const funcionDeVariasVariables = () => {
+        console.log("Uno");
+        console.log("Dos");
+        console.log("Tres");
+    }
+
+    console.log(sumar(5,8));
+    funcionDeVariasVariables();
+
+    const numeros = [1,2,3,4,5];
+
+    numeros.forEach((el, index) => console.log(`${el}esta en la pocision ${index}`));
+
+function Perro(){
+    console.log(this);
+}
+
+Perro();
+const perro = {
+    nombre: "kenai",
+    ladrar: () => {
+        console.log(this)
+    }
+}
+
+perro.ladrar();*/
+
+/* POO - Prototipos*/
+//POO
+/*
+Clases = Modelo a seguir.
+Objetos = es una instancia a una clase
+    Atributos: es una caracteristica o propiedad u variables dentro de un objeto
+    Meotodos: son las acciones que un objeto puede realizar . son funciones dentro de un objeto
+*/
+
+//funcion constructora
+/*function Animal(nombre, genero){
+    //Atributos
+    this.nombre = nombre;
+    this.genero = genero;
+    //Metodos
+    this.sonar = function(){
+        console.log("Hago sonidos porque estoy vivo");
+    }
+}
+
+
+    
+
+ 
 
 
 
+//Herencia Prototipica
+function Perro(nombre, genero, tamanio){
+    this.super() = Animal;
+    this.super(nombre, genero);
+    this.tamanio = tamanio;
+}
+// Perro esta heredando de Animal
+Perro.prototype = new Animal();
+Perro.prototype.constructor = Perro;
 
+//Sobrescritura de metodos del prototipo padre en el hijo
+Perro.prototype.sonar = function(){
+    console.log("Soy un perro y mi sonido es un ladrido")
+}
 
+Perro.prototype.ladrar = function(){
+    console.log("guau guau");
+}
+const snoopy = new Animal("Snoopy", "Macho", "Mediano"),
+    lolaBunny = new Animal("Lola Bunny", "Hembra");
+    console.log(snoopy);
+    console.log(lolaBunny);*/
 
+    class Animal {
+        constructor(nombre, genero){
+            this.nombre = nombre;
+            this.genero = genero;
+        }
+        //Metodos
+        sonar(){
+            console.log("hago sonidos porque estoy vivo");
+        }
 
+        saludar(){
+            console.log(`hola me llamo ${this.nombre}`);
+        }
 
+    }
 
+        class Perro extends Animal {
+                constructor(nombre, genero, tamanio){
+                    super(nombre, genero);
+                    this.tamanio = tamanio;
+                    this.raza = null;
+                }
 
+            sonar(){
+                console.log("soy un perro y mi sonido es un ladrido");
+            }
 
+            ladrar(){
+                console.log("Guauuu Guauuu!!!");
+            }
+
+            //un metodo estatico es aquel que se puede ejecutar sin necesidad de instanciar la clase
+            
+            static queEres(){
+                console.log("Los perros somos los mejores amigos del hombre");
+            }
+
+            /*Los metodos getters y setters son metodos especiales
+            que nos permiten establecer y obtener los valores de atributos de nuestra clase*/
+            get getRaza(){
+                return this.raza;
+            }
+            set setRaza(raza){
+                this.raza = raza;
+            }
+        
+        }
+        
+
+        const mimi = new Animal("mimi", "hembra");
+        const scooby = new Perro("scooby", "macho", "Gigante");
+
+    
+        console.log(mimi);
+        mimi.saludar();
+        mimi.sonar();
+        console.log(scooby);
+        scooby.saludar();
+        scooby.sonar();
+        Perro.queEres();
+        console.log(scooby.getRaza);
+        scooby.setRaza = "Gran Danes";
+        console.log(scooby.getRaza)
+
+        
+        
 
     </script>
     
